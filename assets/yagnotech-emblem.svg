@@ -1,0 +1,36 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YagnoTech emblem">
+  <defs>
+    <linearGradient id="em-bg" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2E2114"/>
+      <stop offset="1" stop-color="#19110A"/>
+    </linearGradient>
+    <linearGradient id="em-ring" x1="20" y1="20" x2="236" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6C45F" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#E58E2A" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#FFE3A0" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="em-flame" x1="128" y1="58" x2="128" y2="206" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8CD6A"/>
+      <stop offset="0.5" stop-color="#EC9A30"/>
+      <stop offset="1" stop-color="#C8631A"/>
+    </linearGradient>
+    <linearGradient id="em-core" x1="128" y1="104" x2="128" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF3D8"/>
+    </linearGradient>
+    <radialGradient id="em-haze" cx="128" cy="150" r="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EC9A30" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#EC9A30" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="6" y="6" width="244" height="244" rx="58" fill="url(#em-bg)"/>
+  <rect x="7.25" y="7.25" width="241.5" height="241.5" rx="56.75" stroke="url(#em-ring)" stroke-width="2.5"/>
+  <circle cx="128" cy="150" r="66" fill="url(#em-haze)"/>
+
+  <path d="M128 56C140 96 167 111 174 147C179 175 162 204 128 217C94 204 77 175 82 147C89 111 116 96 128 56Z"
+        fill="url(#em-flame)"/>
+  <path d="M110 116L128 142L146 116M128 142V178"
+        stroke="url(#em-core)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="128" cy="82" r="5" fill="#FFF3D8"/>
+</svg>

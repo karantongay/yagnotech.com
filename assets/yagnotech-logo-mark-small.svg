@@ -1,0 +1,28 @@
+<svg width="136" height="218" viewBox="60 18 136 218" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YagnoTech flame mark">
+  <!-- Optical small-size variant: tight viewBox, no glow filter, heavier Y core and spark for legibility at UI sizes (nav, footer, favicons ≥16px). Brand silhouette identical to yagnotech-logo-mark.svg. -->
+  <defs>
+    <linearGradient id="yts-flame" x1="128" y1="26" x2="128" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6C45F"/>
+      <stop offset="0.48" stop-color="#E58E2A"/>
+      <stop offset="1" stop-color="#BE5A14"/>
+    </linearGradient>
+    <linearGradient id="yts-edge" x1="72" y1="60" x2="190" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE3A0" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#8A4310" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="yts-core" x1="128" y1="92" x2="128" y2="186" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF3D8"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M128 26C143 76 177 95 185 140C191 175 170 212 128 228C86 212 65 175 71 140C79 95 113 76 128 26Z"
+        fill="url(#yts-flame)"/>
+  <path d="M128 26C143 76 177 95 185 140C191 175 170 212 128 228C86 212 65 175 71 140C79 95 113 76 128 26Z"
+        stroke="url(#yts-edge)" stroke-width="3" stroke-opacity="0.75"/>
+
+  <path d="M104 102L128 137L152 102M128 137V184"
+        stroke="url(#yts-core)" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="128" cy="58" r="7.5" fill="#FFF3D8"/>
+</svg>

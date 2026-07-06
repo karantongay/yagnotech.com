@@ -1,33 +1,35 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YagnoTech flame mark">
   <defs>
-    <linearGradient id="yt-field" x1="36" y1="30" x2="220" y2="226" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#111827"/>
-      <stop offset="0.54" stop-color="#1D4ED8"/>
-      <stop offset="1" stop-color="#0F766E"/>
+    <linearGradient id="yt-flame" x1="128" y1="26" x2="128" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6C45F"/>
+      <stop offset="0.48" stop-color="#E58E2A"/>
+      <stop offset="1" stop-color="#BE5A14"/>
     </linearGradient>
-    <linearGradient id="yt-edge" x1="64" y1="42" x2="198" y2="214" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#6EA8FF"/>
-      <stop offset="1" stop-color="#2DD4BF"/>
+    <linearGradient id="yt-flame-edge" x1="72" y1="60" x2="190" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE3A0" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#8A4310" stop-opacity="0.7"/>
     </linearGradient>
-    <linearGradient id="yt-ribbon" x1="74" y1="66" x2="181" y2="190" gradientUnits="userSpaceOnUse">
+    <linearGradient id="yt-core" x1="128" y1="92" x2="128" y2="186" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="0.45" stop-color="#EAF2FF"/>
-      <stop offset="1" stop-color="#CCFBF1"/>
+      <stop offset="1" stop-color="#FFF3D8"/>
     </linearGradient>
-    <filter id="yt-shadow" x="18" y="18" width="220" height="226" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1D4ED8" flood-opacity="0.22"/>
+    <filter id="yt-glow" x="38" y="6" width="180" height="244" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#E58E2A" flood-opacity="0.45"/>
     </filter>
   </defs>
-  <g filter="url(#yt-shadow)">
-    <path d="M128 24L212 72V168L128 216L44 168V72L128 24Z" fill="url(#yt-field)"/>
-    <path d="M128 34L203 77V163L128 206L53 163V77L128 34Z" stroke="url(#yt-edge)" stroke-width="4" stroke-linejoin="round" stroke-opacity="0.72"/>
+
+  <!-- Outer flame: silhouette that reads as a single ascending tongue -->
+  <g filter="url(#yt-glow)">
+    <path d="M128 26C143 76 177 95 185 140C191 175 170 212 128 228C86 212 65 175 71 140C79 95 113 76 128 26Z"
+          fill="url(#yt-flame)"/>
+    <path d="M128 26C143 76 177 95 185 140C191 175 170 212 128 228C86 212 65 175 71 140C79 95 113 76 128 26Z"
+          stroke="url(#yt-flame-edge)" stroke-width="2.5" stroke-opacity="0.7"/>
   </g>
-  <path d="M77 73H104L128 113L152 73H179L141 135V179H115V135L77 73Z" fill="url(#yt-ribbon)"/>
-  <path d="M94 95L128 151L162 95" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.25"/>
-  <path d="M67 122H103" stroke="#93C5FD" stroke-width="4" stroke-linecap="round" stroke-opacity="0.72"/>
-  <path d="M153 122H189" stroke="#5EEAD4" stroke-width="4" stroke-linecap="round" stroke-opacity="0.72"/>
-  <circle cx="67" cy="122" r="7" fill="#93C5FD"/>
-  <circle cx="189" cy="122" r="7" fill="#5EEAD4"/>
-  <circle cx="128" cy="56" r="7" fill="#BFDBFE"/>
-  <path d="M128 56V93" stroke="#BFDBFE" stroke-width="4" stroke-linecap="round" stroke-opacity="0.6"/>
+
+  <!-- Luminous Y core: the disciplined offering within the flame -->
+  <path d="M104 104L128 138L152 104M128 138V182"
+        stroke="url(#yt-core)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Spark / aspiration node at the apex -->
+  <circle cx="128" cy="58" r="6" fill="#FFF3D8"/>
 </svg>
